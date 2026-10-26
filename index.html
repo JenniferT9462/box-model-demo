@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Demo</title>
+  
+</head>
+<body>
+  <h1>Every element is a box</h1>
+  <p class="hint">Inside out: content → padding → border → margin</p>
+
+  <div class="layer margin" id="margin">
+    <span class="label">margin: space outside</span>
+    <div class="layer border" id="border">
+      <span class="label">border: the frame</span>
+      <div class="layer padding" id="padding">
+        <span class="label">padding: space inside</span>
+        <div class="content">
+          <span class="label">content</span>
+          Sunday Book Club
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <label for="margin-size">margin</label>
+    <input type="range" id="margin-size" min="40" max="120" value="40">
+    <span id="margin-value">40px</span>
+
+    <label for="border-size">border</label>
+    <input type="range" id="border-size" min="40" max="120" value="40">
+    <span id="border-value">40px</span>
+
+    <label for="padding-size">padding</label>
+    <input type="range" id="padding-size" min="40" max="120" value="40">
+    <span id="padding-value">40px</span>
+  </div>
+
+  
+</body>
+</html>
